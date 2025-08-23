@@ -21,7 +21,7 @@
     </style>
     <?php
         $name=$_GET['name'];
-        $connect = mysqli_connect('sql102.pcshared.com', 'pcsha_32728517', '44219173', 'pcsha_32728517_890');
+        $connect = mysqli_connect('localhost', 'root', '', 'dbname');
         $sql="SELECT * FROM `wallet,user` where wallet.user = user.id and user.name = $name";
         $resault = mysqli_query($connect,$sql);
     ?>
